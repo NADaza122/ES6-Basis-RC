@@ -3,14 +3,20 @@ let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 let endpoint = 'https://restcountries.com/v3.1/all';
 
-function exito(response){
-    console.log(JSON.parse(response))
+const exito = (response) => {
+    const pais = JSON.parse(response).results
+    pais.forEach((pais) => {
+        console.log(`Pais: ${pais.capital}`)
+        console.log(`------------------`)
+    })
+    //console.log(JSON.parse(response))
 }
 
-function fallo(status){
+const fallo = (status) => {
     console.log(status)
 }
-function get_data(endpoint, exito, fallo){
+
+const get_data = (endpoint, exito, fallo) => {
     //2. Conexión a la API
     let http = new XMLHttpRequest()
 
@@ -21,7 +27,7 @@ function get_data(endpoint, exito, fallo){
     http.send()
 
     //5. Tratamiento de Response 
-    http.onload = function(){
+    http.onload = () => {
         if(http.status === 200 ){
             exito(http.responseText)
         }else{
