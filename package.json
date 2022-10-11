@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon Async/2_calback_arrow.js"
+    "dev": "nodemon Async/3_calbacl_request.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "colors": "^1.4.0",
+    "request": "^2.88.2",
     "xmlhttprequest": "^1.8.0"
   }
 }

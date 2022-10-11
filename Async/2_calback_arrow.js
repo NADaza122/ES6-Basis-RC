@@ -4,12 +4,12 @@ let XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 let endpoint = 'https://restcountries.com/v3.1/all';
 
 const exito = (response) => {
-    const pais = JSON.parse(response).results
+    /*const pais = JSON.parse(response).results
     pais.forEach((pais) => {
         console.log(`Pais: ${pais.capital}`)
         console.log(`------------------`)
-    })
-    //console.log(JSON.parse(response))
+    })*/
+    console.log(JSON.parse(response))
 }
 
 const fallo = (status) => {
