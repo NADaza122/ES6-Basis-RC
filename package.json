@@ -1,0 +1,33 @@
+{
+  "name": "es6-basis-rc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Learning es6 project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon evidencia1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RC1paula/ES6-Basis-RC.git"
+  },
+  "keywords": [
+    "Arreglos",
+    "funciones",
+    "y",
+    "objetos"
+  ],
+  "author": "Paula Rojas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RC1paula/ES6-Basis-RC/issues"
+  },
+  "homepage": "https://github.com/RC1paula/ES6-Basis-RC#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
