@@ -1,11 +1,26 @@
 import {materias} from "./materias.js";
 
+const profesores = materias.map((materias)=>{
+    return materias
+})
+
+console.log(profesores)
 
 //splice: eliminar 
-const removed = materias.splice(3,1)
-// console.log(removed)
+const eliminar = materias.splice(1)
+
+console.log(eliminar)
 
 //Actualizar
 // console.log(PHP)
-const actualizar = materias.splice(3,1,"Base de datos","Fernando","técnica",[3.3,4.2,1])
-console.log (materias) 
+// materias.findIndex((materias)=>{
+//     if(materias.id == 1){
+//         materias.class ="Cultura Fisica"
+//         materias.teacher="Luis "
+//         materias.tipo="Tranversal"
+//         materias.Notes= [4.0,5.0,3.0]
+//     }
+//     return materias;
+//  })
+
+// console.log (materias) 

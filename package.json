@@ -1,12 +1,12 @@
 {
   "name": "es6-basis-rc",
-  "type": "commonjs",
+  "type": "module",
   "version": "1.0.0",
   "description": "Learning es6 project",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon Async/3_calbacl_request.js"
+    "dev": "nodemon evidencia1.js"
   },
   "repository": {
     "type": "git",
